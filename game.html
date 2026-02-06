@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catechism Clash | Reformed Realm</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Reformed Realm</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="reformers.html">Reformers</a></li>
+          <li><a href="confessions.html">Confessions</a></li>
+          <li><a href="game.html" aria-current="page">Catechism Clash</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section stack-xl">
+    <section>
+      <h1>Catechism Clash</h1>
+      <p>
+        A scholastic-bowl style memory challenge based on Westminster Shorter Catechism,
+        the Westminster Confession, and the Three Forms of Unity.
+      </p>
+    </section>
+
+    <section class="game-board">
+      <div class="hud">
+        <p><strong>Score:</strong> <span id="score">0</span></p>
+        <p><strong>Question:</strong> <span id="progress">0/0</span></p>
+      </div>
+
+      <article class="question-card">
+        <p class="tag" id="category">Category</p>
+        <h2 id="prompt">Press Start to begin your challenge.</h2>
+        <div id="choices" class="choice-list"></div>
+      </article>
+
+      <div class="game-actions">
+        <button class="btn btn-primary" id="startBtn">Start Game</button>
+        <button class="btn btn-secondary" id="nextBtn" disabled>Next Question</button>
+      </div>
+
+      <p id="feedback" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Memorize. Compete. Rejoice in truth.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
